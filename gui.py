@@ -94,7 +94,7 @@ class Application(Frame):
 # main
 root = Tk()
 root.resizable(0,0)
-winsound.PlaySound("C:/Users/Gokdeniz school/Desktop/systeemanalyse/guessing_game/song.wav", winsound.SND_ASYNC)
+winsound.PlaySound("C:/LOCATION/guessing_game/song.wav", winsound.SND_ASYNC)
 root.geometry('420x120')
 root.title("Guessing Game")
 app = Application(root)
