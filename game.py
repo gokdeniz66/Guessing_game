@@ -4,6 +4,7 @@
 from tkinter import *
 import random
 import winsound
+import os
 
 class Application(Frame):
     """A GUI application which which generates random number and gets user input"""
@@ -94,7 +95,10 @@ class Application(Frame):
 # main
 root = Tk()
 root.resizable(0,0)
-winsound.PlaySound("C:/LOCATION/guessing_game/song.wav", winsound.SND_ASYNC)
+path_music = os.path.dirname(os.path.abspath(__file__))
+music_file = "song.wav"
+path = os.path.join(path_music, music_file)
+winsound.PlaySound(path, winsound.SND_ASYNC)
 root.geometry('420x120')
 root.title("Guessing Game")
 app = Application(root)
